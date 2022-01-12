@@ -2,7 +2,7 @@ def maxsubarray(array):
     cur_max=0
     global_max=-9999999
     for i in range(len(array)):
-        cur_max = max(array[i],cur_max+array[i])
+        cur_max = max(array[i],cur_max+array[i]) #Find the largest subarray end at pos i.
         if cur_max > global_max:
             global_max = cur_max
         
